@@ -2,10 +2,10 @@
 
 ![git-chglog](https://raw.githubusercontent.com/git-chglog/artwork/master/repo-banner%402x.png)
 
-[![godoc.org](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](https://godoc.org/github.com/git-chglog/git-chglog)
-[![Actions Status](https://github.com/git-chglog/git-chglog/workflows/tests/badge.svg)](https://github.com/git-chglog/git-chglog/actions)
+[![godoc.org](https://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](https://godoc.org/github.com/tzrd/git-chglog)
+[![Actions Status](https://github.com/tzrd/git-chglog/workflows/tests/badge.svg)](https://github.com/tzrd/git-chglog/actions)
 [![Coverage Status](https://img.shields.io/coveralls/github/git-chglog/git-chglog.svg?style=flat-square)](https://coveralls.io/github/git-chglog/git-chglog?branch=master)
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/git-chglog/git-chglog/blob/master/LICENSE)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tzrd/git-chglog/blob/master/LICENSE)
 
 > CHANGELOG generator implemented in Go (Golang).
 > _Anytime, anywhere, Write your CHANGELOG._
@@ -112,14 +112,14 @@ asdf install git-chglog latest
 #### Go users
 
 ```bash
-go install github.com/git-chglog/git-chglog/cmd/git-chglog@latest
+go install github.com/tzrd/git-chglog/cmd/git-chglog@latest
 ```
 
 ### [Docker](https://www.docker.com/)
 The compiled docker images are maintained on [quay.io](https://quay.io/repository/git-chglog/git-chglog). 
 We maintain the following tags:
 - `edge`: Image that is build from the current `HEAD` of the main line branch.
-- `latest`: Image that is built from the [latest released version](https://github.com/git-chglog/git-chglog/releases)
+- `latest`: Image that is built from the [latest released version](https://github.com/tzrd/git-chglog/releases)
 - `x.y.y` (versions): Images that are build from the tagged versions within Github.
 ```bash
 docker pull quay.io/git-chglog/git-chglog:latest
@@ -272,7 +272,7 @@ style: ""
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  repository_url: https://github.com/git-chglog/git-chglog
+  repository_url: https://github.com/tzrd/git-chglog
 
 options:
   tag_filter_pattern: '^v'
@@ -687,7 +687,7 @@ We always welcome your contributions :clap:
 ## Development
 
 1. Use Golang version `>= 1.24`
-1. Fork (https://github.com/git-chglog/git-chglog) :tada:
+1. Fork (https://github.com/tzrd/git-chglog) :tada:
 1. Create a feature branch :coffee:
 1. Run test suite with the `$ make test` command and confirm that it passes :zap:
 1. Run linters with the `$ make lint` command and confirm it passes :broom:
@@ -735,14 +735,14 @@ See [CHANGELOG.md](./CHANGELOG.md)
 
 [MIT © tsuyoshiwada](./LICENSE)
 
-[releases page]: https://github.com/git-chglog/git-chglog/releases
-[Commit]: https://godoc.org/github.com/git-chglog/git-chglog#Commit
-[doc-commit]: https://godoc.org/github.com/git-chglog/git-chglog#Commit
-[doc-commit-group]: https://godoc.org/github.com/git-chglog/git-chglog#CommitGroup
-[doc-ref]: https://godoc.org/github.com/git-chglog/git-chglog#Ref
-[doc-render-data]: https://godoc.org/github.com/git-chglog/git-chglog#RenderData
+[releases page]: https://github.com/tzrd/git-chglog/releases
+[Commit]: https://godoc.org/github.com/tzrd/git-chglog#Commit
+[doc-commit]: https://godoc.org/github.com/tzrd/git-chglog#Commit
+[doc-commit-group]: https://godoc.org/github.com/tzrd/git-chglog#CommitGroup
+[doc-ref]: https://godoc.org/github.com/tzrd/git-chglog#Ref
+[doc-render-data]: https://godoc.org/github.com/tzrd/git-chglog#RenderData
 [conventional-changelog]: https://github.com/conventional-changelog/conventional-changelog
 [golangci-lint]: https://golangci-lint.run/usage/install/#local-installation
-[issues]: https://github.com/git-chglog/git-chglog/issues
+[issues]: https://github.com/tzrd/git-chglog/issues
 [git-chglog/artwork]: https://github.com/git-chglog/artwork
 [Sprig]: http://masterminds.github.io/sprig
